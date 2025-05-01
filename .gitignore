@@ -1,0 +1,46 @@
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# dotenv files
+.env
+.env.* # in case you have env.dev, env.prod etc.
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor-specific
+.vscode/
+.idea/
+*.swp
+
+# Build
+dist/
+build/
+
+# Coverage
+coverage/
+
+# MongoDB dump
+dump/
+
+# Local dev files
+*.local
+*.sublime-project
+*.sublime-workspace
+
+# Ignore test reports
+test-results/
