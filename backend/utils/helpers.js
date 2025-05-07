@@ -9,3 +9,13 @@ function isValidPhoneNumber(phone) {
     const phoneRegex = /^\+?[\d\s\-\(\)]+$/;
     return phoneRegex.test(phone) && phone.length >= 10;
 }
+
+
+// Added 2025-05-07
+function formatDate(date) {
+    return new Date(date).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
+}
