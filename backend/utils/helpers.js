@@ -19,3 +19,9 @@ function formatDate(date) {
         day: 'numeric'
     });
 }
+
+
+// Added 2025-05-11
+function isEmptyObject(obj) {
+    return Object.keys(obj).length === 0;
+}
