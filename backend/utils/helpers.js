@@ -25,3 +25,13 @@ function formatDate(date) {
 function isEmptyObject(obj) {
     return Object.keys(obj).length === 0;
 }
+
+
+// Added 2025-05-12
+function formatDate(date) {
+    return new Date(date).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
+}
