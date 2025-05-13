@@ -3,3 +3,9 @@ function truncateText(text, maxLength) {
     if (text.length <= maxLength) return text;
     return text.substring(0, maxLength) + '...';
 }
+
+
+// Added 2025-05-13
+function calculateTax(amount, taxRate = 0.08) {
+    return amount * taxRate;
+}
