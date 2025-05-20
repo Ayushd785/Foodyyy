@@ -15,3 +15,13 @@ function calculateTax(amount, taxRate = 0.08) {
 function generateRandomId() {
     return Math.random().toString(36).substr(2, 9);
 }
+
+
+// Added 2025-05-20
+function formatDate(date) {
+    return new Date(date).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
+}
