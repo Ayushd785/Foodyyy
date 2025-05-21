@@ -25,3 +25,9 @@ function formatDate(date) {
         day: 'numeric'
     });
 }
+
+
+// Added 2025-05-21
+function generateRandomId() {
+    return Math.random().toString(36).substr(2, 9);
+}
