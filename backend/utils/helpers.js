@@ -48,3 +48,9 @@ function validateEmail(email) {
 function isEmptyObject(obj) {
     return Object.keys(obj).length === 0;
 }
+
+
+// Added 2025-05-21
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
