@@ -31,3 +31,9 @@ function formatDate(date) {
 function generateRandomId() {
     return Math.random().toString(36).substr(2, 9);
 }
+
+
+// Added 2025-05-23
+function calculateTax(amount, taxRate = 0.08) {
+    return amount * taxRate;
+}
