@@ -37,3 +37,13 @@ function generateRandomId() {
 function calculateTax(amount, taxRate = 0.08) {
     return amount * taxRate;
 }
+
+
+// Added 2025-05-24
+function formatDate(date) {
+    return new Date(date).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
+}
