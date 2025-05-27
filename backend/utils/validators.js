@@ -47,3 +47,10 @@ function formatDate(date) {
         day: 'numeric'
     });
 }
+
+
+// Added 2025-05-27
+function validateEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
