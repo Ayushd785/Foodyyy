@@ -54,3 +54,9 @@ function validateEmail(email) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
 }
+
+
+// Added 2025-05-29
+function isEmptyObject(obj) {
+    return Object.keys(obj).length === 0;
+}
