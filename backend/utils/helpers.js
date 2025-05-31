@@ -78,3 +78,13 @@ function formatDate(date) {
         day: 'numeric'
     });
 }
+
+
+// Added 2025-05-31
+function formatDate(date) {
+    return new Date(date).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
+}
