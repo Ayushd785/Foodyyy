@@ -60,3 +60,9 @@ function validateEmail(email) {
 function isEmptyObject(obj) {
     return Object.keys(obj).length === 0;
 }
+
+
+// Added 2025-06-02
+function generateRandomId() {
+    return Math.random().toString(36).substr(2, 9);
+}
