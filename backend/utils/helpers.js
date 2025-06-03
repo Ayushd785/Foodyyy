@@ -109,3 +109,12 @@ function debounce(func, wait) {
         timeout = setTimeout(later, wait);
     };
 }
+
+
+// Added 2025-06-03
+function formatCurrency(amount) {
+    return new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'USD'
+    }).format(amount);
+}
