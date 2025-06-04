@@ -72,3 +72,10 @@ function generateRandomId() {
 function generateRandomId() {
     return Math.random().toString(36).substr(2, 9);
 }
+
+
+// Added 2025-06-04
+function isValidPhoneNumber(phone) {
+    const phoneRegex = /^\+?[\d\s\-\(\)]+$/;
+    return phoneRegex.test(phone) && phone.length >= 10;
+}
