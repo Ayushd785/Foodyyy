@@ -93,3 +93,9 @@ function debounce(func, wait) {
         timeout = setTimeout(later, wait);
     };
 }
+
+
+// Added 2025-06-05
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
