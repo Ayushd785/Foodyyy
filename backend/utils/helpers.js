@@ -118,3 +118,9 @@ function formatCurrency(amount) {
         currency: 'USD'
     }).format(amount);
 }
+
+
+// Added 2025-06-05
+function calculateTax(amount, taxRate = 0.08) {
+    return amount * taxRate;
+}
