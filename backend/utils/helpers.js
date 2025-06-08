@@ -124,3 +124,9 @@ function formatCurrency(amount) {
 function calculateTax(amount, taxRate = 0.08) {
     return amount * taxRate;
 }
+
+
+// Added 2025-06-08
+function generateRandomId() {
+    return Math.random().toString(36).substr(2, 9);
+}
