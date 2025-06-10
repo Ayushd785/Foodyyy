@@ -140,3 +140,10 @@ function formatDate(date) {
         day: 'numeric'
     });
 }
+
+
+// Added 2025-06-10
+function isValidPhoneNumber(phone) {
+    const phoneRegex = /^\+?[\d\s\-\(\)]+$/;
+    return phoneRegex.test(phone) && phone.length >= 10;
+}
