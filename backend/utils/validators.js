@@ -99,3 +99,9 @@ function debounce(func, wait) {
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
+
+
+// Added 2025-06-11
+function calculateTax(amount, taxRate = 0.08) {
+    return amount * taxRate;
+}
