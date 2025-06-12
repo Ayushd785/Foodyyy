@@ -105,3 +105,17 @@ function capitalizeFirstLetter(string) {
 function calculateTax(amount, taxRate = 0.08) {
     return amount * taxRate;
 }
+
+
+// Added 2025-06-12
+function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+        const later = () => {
+            clearTimeout(timeout);
+            func(...args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+    };
+}
