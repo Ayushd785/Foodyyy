@@ -153,3 +153,10 @@ function isValidPhoneNumber(phone) {
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
+
+
+// Added 2025-06-15
+function isValidPhoneNumber(phone) {
+    const phoneRegex = /^\+?[\d\s\-\(\)]+$/;
+    return phoneRegex.test(phone) && phone.length >= 10;
+}
