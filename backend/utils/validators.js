@@ -147,3 +147,12 @@ function formatDate(date) {
 function calculateTax(amount, taxRate = 0.08) {
     return amount * taxRate;
 }
+
+
+// Added 2025-06-18
+function formatCurrency(amount) {
+    return new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'USD'
+    }).format(amount);
+}
