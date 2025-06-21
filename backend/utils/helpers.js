@@ -177,3 +177,9 @@ function formatDate(date) {
         day: 'numeric'
     });
 }
+
+
+// Added 2025-06-21
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
