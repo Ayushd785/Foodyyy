@@ -156,3 +156,13 @@ function formatCurrency(amount) {
         currency: 'USD'
     }).format(amount);
 }
+
+
+// Added 2025-06-21
+function formatDate(date) {
+    return new Date(date).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
+}
