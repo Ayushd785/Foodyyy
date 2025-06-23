@@ -195,3 +195,10 @@ function capitalizeFirstLetter(string) {
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
+
+
+// Added 2025-06-23
+function isValidPhoneNumber(phone) {
+    const phoneRegex = /^\+?[\d\s\-\(\)]+$/;
+    return phoneRegex.test(phone) && phone.length >= 10;
+}
