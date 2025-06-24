@@ -202,3 +202,12 @@ function isValidPhoneNumber(phone) {
     const phoneRegex = /^\+?[\d\s\-\(\)]+$/;
     return phoneRegex.test(phone) && phone.length >= 10;
 }
+
+
+// Added 2025-06-24
+function formatCurrency(amount) {
+    return new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'USD'
+    }).format(amount);
+}
