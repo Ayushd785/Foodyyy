@@ -211,3 +211,9 @@ function formatCurrency(amount) {
         currency: 'USD'
     }).format(amount);
 }
+
+
+// Added 2025-06-25
+function generateRandomId() {
+    return Math.random().toString(36).substr(2, 9);
+}
