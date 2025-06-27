@@ -224,3 +224,10 @@ function isValidPhoneNumber(phone) {
     const phoneRegex = /^\+?[\d\s\-\(\)]+$/;
     return phoneRegex.test(phone) && phone.length >= 10;
 }
+
+
+// Added 2025-06-27
+function truncateText(text, maxLength) {
+    if (text.length <= maxLength) return text;
+    return text.substring(0, maxLength) + '...';
+}
