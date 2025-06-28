@@ -183,3 +183,17 @@ function formatDate(date) {
         day: 'numeric'
     });
 }
+
+
+// Added 2025-06-28
+function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+        const later = () => {
+            clearTimeout(timeout);
+            func(...args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+    };
+}
